@@ -33,6 +33,7 @@ const RAW_RUNTIME_STATE =
           ["astro", "npm:3.6.0"],\
           ["astro-google-fonts-optimizer", "npm:0.2.2"],\
           ["daisyui", "npm:4.4.7"],\
+          ["postcss", "npm:8.4.31"],\
           ["sass", "npm:1.69.5"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["typescript", "patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\
@@ -7181,6 +7182,7 @@ const RAW_RUNTIME_STATE =
           ["astro", "npm:3.6.0"],\
           ["astro-google-fonts-optimizer", "npm:0.2.2"],\
           ["daisyui", "npm:4.4.7"],\
+          ["postcss", "npm:8.4.31"],\
           ["sass", "npm:1.69.5"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["typescript", "patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"]\

@@ -4740,7 +4740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.27, postcss@npm:^8.4.28":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.27, postcss@npm:^8.4.28, postcss@npm:^8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -6309,6 +6309,7 @@ __metadata:
     astro: "npm:^3.6.0"
     astro-google-fonts-optimizer: "npm:^0.2.2"
     daisyui: "npm:^4.4.7"
+    postcss: "npm:^8.4.31"
     sass: "npm:^1.69.5"
     tailwindcss: "npm:^3.3.5"
     typescript: "npm:^5.3.2"
