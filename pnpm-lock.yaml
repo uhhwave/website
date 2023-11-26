@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/cloudflare':
     specifier: ^7.7.1
     version: 7.7.1(astro@3.6.0)(sass@1.69.5)
+  '@astrojs/deno':
+    specifier: ^5.0.1
+    version: 5.0.1(astro@3.6.0)
   '@astrojs/tailwind':
     specifier: ^5.0.2
     version: 5.0.2(astro@3.6.0)(tailwindcss@3.3.5)
@@ -105,6 +108,15 @@ packages:
 
   /@astrojs/compiler@2.3.2:
     resolution: {integrity: sha512-jkY7bCVxl27KeZsSxIZ+pqACe+g8VQUdTiSJRj/sXYdIaZlW3ZMq4qF2M17P/oDt3LBq0zLNwQr4Cb7fSpRGxQ==}
+    dev: false
+
+  /@astrojs/deno@5.0.1(astro@3.6.0):
+    resolution: {integrity: sha512-nYztGqHqC+q3A9ynjj3gblAkO/ZylDwahjVTx+2DvZgX4U+BJU/gL5BZkNtL+P10opCKJi29NvvVFvk6jwZHmA==}
+    peerDependencies:
+      astro: ^3.1.4
+    dependencies:
+      astro: 3.6.0(sass@1.69.5)(typescript@5.3.2)
+      esbuild: 0.19.7
     dev: false
 
   /@astrojs/internal-helpers@0.2.1:
