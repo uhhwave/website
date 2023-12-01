@@ -26,8 +26,10 @@ export const POST: APIRoute = async ({ request, redirect }) => {
       displayName: name,
     });
   } catch (error: any) {
+    const errorCode = error.code;
+    const errorMessage = error.message;
     return new Response(
-      "Something went wrong",
+      `Something went wrong! // ${errorCode} // ${errorMessage}`,
       { status: 400 }
     );
   }
