@@ -27,11 +27,13 @@ if (error) {
 }
 
 const email = data?.user?.email;
+const username = data?.user?.user_metadata.name;
+
 ---
 
 <Layout title="Dashboard" description="this is the dashboard!">
 <div class="flex items-center justify-center flex-col p-20">
-    <div class=""><h1 class="text-6xl font-semibold">Welcome,</h1><h1 class="text-4xl font-semibold text-accent">{email}</h1></div>
+    <div class=""><h1 class="text-6xl font-semibold">Welcome,</h1><h1 class="text-4xl font-semibold text-accent">{username}</h1></div>
   <div class="max-w-3xl my-7"><p class="text-2xl text-rose-300 font-medium">We are happy to see you here! This is a WIP dashboard, so there is nothing or limited features here atm! check back l8r, byee</p></div>
   <form action="/api/auth/signout" class="form-control">
     <button class="btn btn-accent btn-outline w-60" type="submit">Sign out</button>
