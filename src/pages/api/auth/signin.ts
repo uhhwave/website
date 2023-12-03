@@ -6,6 +6,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
   const formData = await request.formData();
   const email = formData.get("email")?.toString();
   const password = formData.get("password")?.toString();
+  const captchaResponse = formData.get("cf-turnstile-response")?.toString();
   const provider = formData.get("provider")?.toString() as Provider;
 
   const validProviders = ["google", "discord"];
@@ -32,6 +33,9 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
   const { data, error } = await supabase.auth.signInWithPassword({
     email,
     password,
+    options: {
+      captchaToken: captchaResponse,
+    }
   });
 
   if (error) {

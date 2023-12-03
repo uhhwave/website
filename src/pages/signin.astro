@@ -19,9 +19,12 @@ if (accessToken && refreshToken) {
     <form action="/api/auth/signin" method="POST" class="form-control">
       <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered input-secondary mb-3" />
       <input type="password" name="password" id="password" placeholder="Password" class="input input-bordered input-secondary mb-3" />
+      <div class="cf-turnstile mb-3" data-sitekey="0x4AAAAAAAOCPSrqXWhi9tIK" data-theme="dark"></div>
       <button type="submit" class="btn btn-outline btn-accent mb-3">Login</button>
       <button value="google" class="btn btn-outline btn-accent mb-3" name="provider" type="submit">Sign in with Google</button>
       <button value="discord" class="btn btn-outline btn-accent" name="provider" type="submit">Sign in with Discord</button>
     </form>
       </div>
 </Layout>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
