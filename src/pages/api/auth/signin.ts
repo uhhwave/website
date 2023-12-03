@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
   const captchaResponse = formData.get("cf-turnstile-response")?.toString();
   const provider = formData.get("provider")?.toString() as Provider;
 
-  const validProviders = ["google", "discord"];
+  const validProviders = ["google", "discord", "spotify"];
 
   if (provider && validProviders.includes(provider)) {
     const { data, error } = await supabase.auth.signInWithOAuth({
