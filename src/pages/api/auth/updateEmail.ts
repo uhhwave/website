@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
     return new Response("Email is required", { status: 400 });
   }
  
-  const { data, error } = await supabase.auth.updateUser({email: email})
+  const { error } = await supabase.auth.updateUser({email: email})
 
   if (error) {
     return new Response(error.message, { status: 500 });

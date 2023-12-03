@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
     return new Response("Password is required", { status: 400 });
   }
  
-  const { data, error } = await supabase.auth.updateUser({password: password})
+  const { error } = await supabase.auth.updateUser({password: password})
 
   if (error) {
     return new Response(error.message, { status: 500 });
