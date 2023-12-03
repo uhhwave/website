@@ -5,8 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Register" description="Register for ...... smth!">
   <div class="flex items-center justify-center flex-col p-20">
   <h1 class="text-6xl font-semibold mb-4">Register</h1>
-  <p class="text-lg font-normal"> Already have an account? <a href="/signin" class="link link-accent">Sign in</a></p>
-  <br />
+  <p class="text-lg font-normal mb-5"> Already have an account? <a href="/signin" class="link link-accent">Sign in</a></p>
   <form action="/api/auth/register" method="POST" class="form-control">
     <input type="text" name="username" id="username" placeholder="Username" class="input input-bordered input-secondary mb-3" />
     <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered input-secondary mb-3" />

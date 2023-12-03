@@ -14,8 +14,7 @@ if (accessToken && refreshToken) {
 <Layout title="Sign in" description="Sign in to .... smth!">
   <div class="flex items-center justify-center flex-col p-20">
     <h1 class="text-6xl font-semibold mb-4">Sign In</h1>
-    <p class="text-lg font-normal">New here? <a href="/register" class="link link-accent">Register</a></p>
-    <br />
+    <p class="text-lg font-normal mb-5">New here? <a href="/register" class="link link-accent">Register</a></p>
     <form action="/api/auth/signin" method="POST" class="form-control">
       <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered input-secondary mb-3" />
       <input type="password" name="password" id="password" placeholder="Password" class="input input-bordered input-secondary mb-3" />
