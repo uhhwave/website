@@ -26,22 +26,31 @@ if (error) {
   return redirect("/signin");
 }
 
-const email = data?.user?.email;
+const avatar = data?.user?.user_metadata.avatar_url;
 const username = data?.user?.user_metadata.name;
 ---
 
 <Layout title="Dashboard" description="this is the dashboard!">
   <div class="flex items-center justify-center flex-col p-20">
-    <div class="">
+    <div>
+      <div class="text-center mb-3">
+        <div class="avatar">
+          <div class="w-32 rounded-full">
+            <img
+              referrerpolicy="no-referrer"
+              src={avatar}
+              alt="Profile Picture"
+            />
+          </div>
+        </div>
+      </div>
       <h1 class="text-6xl font-semibold">Welcome,</h1><h1
         class="text-4xl font-semibold text-accent"
       >
         {username}
       </h1>
     </div>
-    <div class="max-w-3xl my-3">
-      
-    </div>
+    <div class="max-w-3xl my-3"></div>
     <button
       class="btn btn-accent btn-outline w-60 mb-2"
       onclick="changeName.showModal()">Change username</button
@@ -64,6 +73,36 @@ const username = data?.user?.user_metadata.name;
             />
             <button type="submit" class="btn btn-outline btn-accent mb-3"
               >Update username</button
+            >
+          </form>
+        </div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <button
+      class="btn btn-accent btn-outline w-60 mb-2"
+      onclick="changeAvatar.showModal()">Change avatar</button
+    >
+    <dialog id="changeAvatar" class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg">Change avatar</h3>
+        <div class="flex items-center justify-center flex-col mt-5 mb-2">
+          <form
+            action="/api/auth/updateAvatar"
+            method="POST"
+            class="form-control max-w-sm"
+          >
+            <input
+              type="text"
+              name="avatar"
+              id="avatar"
+              placeholder="Avatar URL (only imgur)"
+              class="input input-bordered input-secondary mb-3"
+            />
+            <button type="submit" class="btn btn-outline btn-accent mb-3"
+              >Update avatar</button
             >
           </form>
         </div>

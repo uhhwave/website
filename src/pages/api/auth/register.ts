@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
 import { supabase } from "../../../lib/supabase";
+const crypto = require('crypto');
+
 
 export const POST: APIRoute = async ({ request, redirect }) => {
   const formData = await request.formData();
@@ -8,6 +10,13 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   const username = formData.get("username")?.toString();
   const captchaResponse = formData.get("cf-turnstile-response")?.toString();
 
+  function getGravatarURL(username: string | undefined) {
+    const address = String(username).trim().toLowerCase();
+    const hash = crypto.createHash('sha256').update(address).digest('hex');
+    return `https://www.gravatar.com/avatar/${hash}`;
+   }
+
+   const avatar = getGravatarURL(username);
 
   if (!email || !password || !username) {
     return new Response("Email, username and password are required", { status: 400 });
@@ -18,7 +27,8 @@ export const POST: APIRoute = async ({ request, redirect }) => {
     password,
     options: {
       data: {
-        name: username
+        name: username,
+        avatar_url: avatar,
       },
       captchaToken: captchaResponse,
     }
