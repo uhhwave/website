@@ -11,7 +11,10 @@ import Layout from "../layouts/Layout.astro";
     <input type="text" name="username" id="username" placeholder="Username" class="input input-bordered input-secondary mb-3" />
     <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered input-secondary mb-3" />
     <input type="password" name="password" id="password" placeholder="Password" class="input input-bordered input-secondary mb-3" />
+    <div class="cf-turnstile mb-3" data-sitekey="0x4AAAAAAAOCPSrqXWhi9tIK" data-theme="dark"></div>
     <button type="submit" class="btn btn-outline btn-accent">Register</button>
   </form>
   </div>
 </Layout>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
