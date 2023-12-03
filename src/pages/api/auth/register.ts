@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { supabase } from "../../../lib/supabase";
-const crypto = require('crypto');
+import { createHash } from 'crypto';
 
 
 export const POST: APIRoute = async ({ request, redirect }) => {
@@ -12,7 +12,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
 
   function getGravatarURL(username: string | undefined) {
     const address = String(username).trim().toLowerCase();
-    const hash = crypto.createHash('sha256').update(address).digest('hex');
+    const hash = createHash('sha256').update(address).digest('hex');
     return `https://www.gravatar.com/avatar/${hash}`;
    }
 
