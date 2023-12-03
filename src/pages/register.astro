@@ -8,6 +8,7 @@ import Layout from "../layouts/Layout.astro";
   <p class="text-lg font-normal"> Already have an account? <a href="/signin" class="link link-accent">Sign in</a></p>
   <br />
   <form action="/api/auth/register" method="POST" class="form-control">
+    <input type="text" name="username" id="username" placeholder="Username" class="input input-bordered input-secondary mb-3" />
     <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered input-secondary mb-3" />
     <input type="password" name="password" id="password" placeholder="Password" class="input input-bordered input-secondary mb-3" />
     <button type="submit" class="btn btn-outline btn-accent">Register</button>
