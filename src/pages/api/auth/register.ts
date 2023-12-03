@@ -13,7 +13,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   function getGravatarURL(username: string | undefined) {
     const address = String(username).trim().toLowerCase();
     const hash = createHash('sha256').update(address).digest('hex');
-    return `https://www.gravatar.com/avatar/${hash}`;
+    return `https://www.gravatar.com/avatar/${hash}?default=identicon`;
    }
 
    const avatar = getGravatarURL(username);
