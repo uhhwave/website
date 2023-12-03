@@ -10,7 +10,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   }
  
 const { error } = await supabase.auth.updateUser({
-    data: { username: username }
+    data: { name: username }
   })
 
   if (error) {
