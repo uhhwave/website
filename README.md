@@ -16,7 +16,7 @@ After that, you can start the local development server:
 Now, open your web browser and navigate to http://localhost:4321 (or another port if you have configured one differently). You should see it running locally.
 
 ## Contributing
-At present, I (wave) am only accepting contributions from friends. I appreciate your interest in this project but if you're interested in contributing, please reach out to us directly.
+At present, I (wave) am only accepting contributions from friends. I appreciate your interest in this project but if you're interested in contributing, please reach out to me directly.
 
 ## License
 This project is licensed under the AGPL License - see the LICENSE file for details.
