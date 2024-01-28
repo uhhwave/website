@@ -24,7 +24,7 @@ export default function Home() {
       )}
       {imgUrl && (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-          <Image key={imgUrl} src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" priority />
+          <Image className="rounded-xl" key={imgUrl} src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" priority />
         </div>
       )}
       <ModeToggle />
