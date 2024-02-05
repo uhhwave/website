@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ModeToggle } from "@/components/mode-toggle"
 import { Button } from "@/components/ui/button"
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [imgUrl, setImgUrl] = useState('');
@@ -24,7 +25,7 @@ export default function Home() {
       )}
       {imgUrl && (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-          <Image className="rounded-xl" key={imgUrl} src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" priority />
+          <Link href={"/dash"}><Image className="rounded-xl" key={imgUrl} src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" priority /></Link>
         </div>
       )}
       <ModeToggle />
