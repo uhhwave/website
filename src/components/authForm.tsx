@@ -31,7 +31,7 @@ export default function AuthForm({ session }: { session: Session | null }, { cla
     await supabase.auth.signInWithOAuth({
       provider: "discord",
       options: {
-        redirectTo: `http://localhost:3000/auth/callback`,
+        redirectTo: `https://uhhwavee.vercel.app/auth/callback`,
       },
     })
   }
