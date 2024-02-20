@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [react(), tailwind({
     applyBaseStyles: false
   })],
-  output: "static",
+  output: "server",
   image: {
     domains: ["cdn.shibe.online"]
   },
