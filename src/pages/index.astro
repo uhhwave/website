@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Button } from "@/components/ui/button";
+import { Image } from "astro:assets";
 import { ModeToggle } from "@/components/mode-toggle"
   const res = await fetch('https://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true');
   const data = await res.json();
@@ -14,7 +15,7 @@ import { ModeToggle } from "@/components/mode-toggle"
 			poosh 4 fun
 		  </Button>
 		  <div id="s" style={{ display: 'none', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-			<a href="/dash"><img class="rounded-xl" src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" /></a>
+			<Image class="rounded-xl" src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" />
 		  </div>
 		<ModeToggle client:load />
 	  </main>
