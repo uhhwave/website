@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle"
+  const res = await fetch('https://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true');
+  const data = await res.json();
+  const imgUrl = data[0];
+---
+
+<Layout title="hi~">
+	<main class="flex min-h-screen flex-col items-center justify-between p-24">
+		<h1 class="text-6xl font-thin font-white">hi~</h1>
+		  <Button className='b' id="b" variant={"secondary"}>
+			poosh 4 fun
+		  </Button>
+		  <div id="s" style={{ display: 'none', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+			<a href="/dash"><img class="rounded-xl" src={imgUrl} alt="Shibe" width={600} height={600} loading="eager" /></a>
+		  </div>
+		<ModeToggle client:load />
+	  </main>
+	
+</Layout>
+
+<script is:inline>
+let isHidden = true; // Initial state: element to hide is hidden
+
+  // Find all buttons with the `alert` class on the page.
+  const buttons = document.querySelectorAll('#b');
+
+  // Handle clicks on each button.
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+toggleElements();
+	});
+  });
+
+function toggleElements() {
+  isHidden = !isHidden; // Toggle state
+
+  document.getElementById("s").style.display = "flex";
+  document.getElementById("b").style.display = "none";
+}
+</script>
