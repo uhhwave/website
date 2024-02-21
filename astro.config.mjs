@@ -12,5 +12,9 @@ export default defineConfig({
   image: {
     domains: ["cdn.shibe.online"]
   },
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true
+    },
+  })
 });
