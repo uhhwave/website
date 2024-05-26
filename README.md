@@ -1,75 +1,22 @@
-# Nuxt 3 Minimal Starter
+# ~website
+this repository contains the source code for the my website/blog/whatever, which is hosted at https://uhhwavee.vercel.app. the project is built using modern web technologies like [nuxt](https://nuxt.com) and follows "best practices" for web development.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
+## Getting Started
+To get started with the project, clone the repository and install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
+git clone https://gitlab.com/13waves/-website.git
+cd -website
 bun install
 ```
 
-## Development Server
+After that, you can start the local development server:
+`bun dev`
 
-Start the development server on `http://localhost:3000`:
+Now, open your web browser and navigate to http://localhost:4321 (or another port if you have configured one differently). You should see it running locally.
 
-```bash
-# npm
-npm run dev
+## Contributing
+ATM, I (wave) am only accepting contributions from friends. I appreciate your interest in this project but if you're interested in contributing, please reach out to me directly.
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+This project is licensed under the AGPL License - see the LICENSE file for details.
