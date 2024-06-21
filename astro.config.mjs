@@ -9,9 +9,6 @@ export default defineConfig({
     applyBaseStyles: false
   })],
   output: "server",
-  image: {
-    domains: ["cdn.shibe.online"]
-  },
   adapter: vercel({
     webAnalytics: {
       enabled: true
