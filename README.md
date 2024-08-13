@@ -1,5 +1,5 @@
 # ~website
-this repository contains the source code for the my website/blog/whatever, which is hosted at https://uhhwavee.vercel.app. the project is built using modern web technologies like [angular](https://angular.dev/) and follows "best practices" for web development.
+this repository contains the source code for the my website/blog/whatever, which is hosted at https://wavee.space. the project is built using modern web technologies like [angular](https://angular.dev/) and follows "best practices" for web development.
 
 ## Getting Started
 To get started with the project, clone the repository and install the dependencies:

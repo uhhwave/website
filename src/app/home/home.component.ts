@@ -22,7 +22,7 @@ import { isPlatformBrowser } from '@angular/common';
   ],
 })
 export class HomeComponent implements OnInit {
-  title = '-website';
+  title = '~website';
   imageUrl = '';
 
   constructor(
