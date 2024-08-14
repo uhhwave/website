@@ -1,15 +1,16 @@
-import { Component, HostBinding, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
 import { NgOptimizedImage } from '@angular/common';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { Platform } from '@angular/cdk/platform';
 import { isPlatformBrowser } from '@angular/common';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, MatButtonModule, NgOptimizedImage],
+  imports: [RouterOutlet, NgOptimizedImage, DragDropModule, MatCardModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass'],
   animations: [

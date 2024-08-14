@@ -1,29 +1,35 @@
-<main
-  @fade
-  class="flex min-h-screen flex-col items-center justify-between p-24"
->
-  <h1>hi</h1>
+<main @fade class="flex flex-col items-center justify-between p-24">
+  <!--<h1 cdkDrag>hi</h1>-->
+  <h6 class="mat-headline-large" cdkDrag>hi, im wave~</h6>
+  <h6 class="mat-headline-small" cdkDrag> i make stuff — stream charm by clario </h6>
   <br />
-  <button class="b" id="b" mat-flat-button color="accent">poosh 4 fun</button>
-  <div
-    class="img"
-    id="s"
-    style="
-      display: none;
+  <!--<button class="b" id="b" mat-flat-button color="accent">poosh 4 fun</button>-->
+  <div class="grid sm:grid-flow-row md:grid-flow-col lg:grid-flow-col gap-4">
+    <div class="img" style="
       justify-content: 'center';
       align-items: 'center';
-      height: '100vh';
-    "
-  >
-    <img
-      ngSrc="/janet.jpeg"
-      disableOptimizedSrcset
-      alt="janet"
-      width="700"
-      height="500"
-      class="rounded-xl"
-      priority
-    />
+      height: 100%;
+      width: 100%;
+
+    ">
+      <img ngSrc="/janet.jpeg" disableOptimizedSrcset alt="janet" width="500" height="300" class="rounded-xl" priority
+        cdkDrag />
+    </div>
+    <div class="sc" style="
+      justify-content: 'center';
+      align-items: 'center';
+      height: 100%;
+      width: 100%;
+    ">
+      <!--<iframe allow="autoplay *; fullscreen *; clipboard-write" frameborder="0" height="100%" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/juna/1742301413?i=1742301428"></iframe>-->
+      <iframe class="rounded-xl" width="100%" height="100%" scrolling="no" frameborder="yes" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1867340106&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <!--<div
+        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: 'Inter Tight', Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+        <a href="https://soundcloud.com/ccottrill" title="Clairo" target="_blank"
+          style="color: #cccccc; text-decoration: none;">Clairo</a> · <a href="https://soundcloud.com/ccottrill/juna"
+          title="Juna" target="_blank" style="color: #cccccc; text-decoration: none;">Juna</a></div>-->
+    </div>
   </div>
 </main>
 <router-outlet />
