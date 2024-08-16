@@ -1,9 +1,9 @@
 <template>
-  <NuxtLayout>
     <v-app>
+      <NuxtRouteAnnouncer /> 
+      <NuxtLoadingIndicator />
       <NuxtPage />
     </v-app>
-  </NuxtLayout>
 </template>
 
 <style lang="sass">

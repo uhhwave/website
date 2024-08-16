@@ -11,15 +11,19 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
-    "@nuxtjs/fontaine": "^0.4.2",
+    "@nuxtjs/fontaine": "^0.4.3",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2",
-    "vuetify-nuxt-module": "^0.14.1",
-    "@formkit/auto-animate": "^0.8.2",
-    "sass": "^1.77.2",
-    "vuetify": "^3.6.7"
-  }
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "animate.css": "^4.1.1",
+    "nuxt": "^3.12.4",
+    "sass": "^1.77.8",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3",
+    "vuetify": "^3.7.0",
+    "vuetify-nuxt-module": "^0.16.1"
+  },
+  "devDependencies": {
+    "nuxt-purgecss": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf"
 }
