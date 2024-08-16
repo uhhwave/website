@@ -40,4 +40,7 @@
 
 <script lang="ts">
 import 'animate.css';
+export default {
+
+}
 </script>
