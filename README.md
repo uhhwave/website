@@ -5,8 +5,8 @@ this repository contains the source code for the my website/blog/whatever, which
 To get started with the project, clone the repository and install the dependencies:
 
 ```bash
-git clone https://gitlab.com/13waves/-website.git
-cd -website
+git clone https://git.wavee.space/wave/website.git wavesite
+cd wavesite
 pnpm install
 ```
 
