@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'SF Hello';
+    src: url('/sfh/SFHello-Semibold.woff2') format('woff2'),
+    url('/sfh/SFHello-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Hello';
+    src: url('/sfh/SFHello-Regular.woff2') format('woff2'),
+    url('/sfh/SFHello-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Hello';
+    src: url('/sfh/SFHello-Bold.woff2') format('woff2'),
+    url('/sfh/SFHello-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Hello';
+    src: url('/sfh/SFHello-Thin.woff2') format('woff2'),
+    url('/sfh/SFHello-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Hello';
+    src: url('/sfh/SFHello-Light.woff2') format('woff2'),
+    url('/sfh/SFHello-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Hello';
+    src: url('/sfh/SFHello-Medium.woff2') format('woff2'),
+    url('/sfh/SFHello-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
